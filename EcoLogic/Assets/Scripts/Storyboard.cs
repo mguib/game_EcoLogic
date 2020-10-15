@@ -6,13 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class Storyboard : MonoBehaviour
 {
-    
+    public static string testes;
     private int count;
     public Image actual;
     public List<Sprite> images;
 
     void Start(){
         count = 0;
+        testes = "1";
     }
 
     public void switch_image(){
