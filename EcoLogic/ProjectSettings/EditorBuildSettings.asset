@@ -14,4 +14,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Storyboard.unity
     guid: 0d5003db1d766204aad77f58c2581534
+  - enabled: 1
+    path: Assets/Scenes/Fase1_1.unity
+    guid: 57f3e0c67a6bd5b45b3a0e8df4ea657f
+  - enabled: 1
+    path: Assets/Scenes/Fase1_2.unity
+    guid: edeccf1149ef56447bb8f46723a3335b
+  - enabled: 1
+    path: Assets/Scenes/Fase1_3.unity
+    guid: f45eb1ee25a33b84b834309ef1f4cfea
+  - enabled: 1
+    path: Assets/Scenes/Fase1_4.unity
+    guid: f6b09303de25df947a2a7f55f2eea22d
   m_configObjects: {}
