@@ -11,7 +11,7 @@ public class Esquerda : MonoBehaviour, IPointerDownHandler, IPointerUpHandler// 
     public void OnPointerDown(PointerEventData eventData)
     {
         pressionando = true;
-        Debug.Log(this.gameObject.name + " Was Clicked.");
+        //Debug.Log(this.gameObject.name + " Was Clicked.");
     }
 
     public void OnPointerUp(PointerEventData eventData)

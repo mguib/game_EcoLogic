@@ -254,6 +254,7 @@ GameObject:
   - component: {fileID: 316369015}
   - component: {fileID: 316369014}
   - component: {fileID: 316369013}
+  - component: {fileID: 316369016}
   m_Layer: 5
   m_Name: Direita
   m_TagString: Untagged
@@ -359,6 +360,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 316369011}
   m_CullTransparentMesh: 0
+--- !u!114 &316369016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316369011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2e2ebbc7f5d7664c993a9b479dda184, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &343741259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1017,6 +1030,7 @@ GameObject:
   - component: {fileID: 686805088}
   - component: {fileID: 686805087}
   - component: {fileID: 686805086}
+  - component: {fileID: 686805089}
   m_Layer: 5
   m_Name: Cima
   m_TagString: Untagged
@@ -1122,6 +1136,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686805084}
   m_CullTransparentMesh: 0
+--- !u!114 &686805089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686805084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86b5ee23331ee2a40859beb51991ef24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705930492
 GameObject:
   m_ObjectHideFlags: 0
@@ -1134,6 +1160,7 @@ GameObject:
   - component: {fileID: 705930496}
   - component: {fileID: 705930495}
   - component: {fileID: 705930494}
+  - component: {fileID: 705930497}
   m_Layer: 5
   m_Name: Esquerda
   m_TagString: Untagged
@@ -1239,6 +1266,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705930492}
   m_CullTransparentMesh: 0
+--- !u!114 &705930497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705930492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 712a8507a93d76842bb1040ebad69956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &749562141
 GameObject:
   m_ObjectHideFlags: 0
@@ -4405,7 +4444,6 @@ GameObject:
   - component: {fileID: 1478531558}
   - component: {fileID: 1478531557}
   - component: {fileID: 1478531556}
-  - component: {fileID: 1478531559}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -4425,7 +4463,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ac0602ad1888f94396ec51da7446aa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
+  vel: 2.5
+  dir: 
 --- !u!212 &1478531557
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4489,21 +4528,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1478531559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1478531554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02023ecd8b3a5b84f9d9ec8affd6e8e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  variableJoystick: {fileID: 0}
-  rb: {fileID: 0}
 --- !u!1 &1558576038
 GameObject:
   m_ObjectHideFlags: 0
@@ -4999,6 +5023,7 @@ GameObject:
   - component: {fileID: 1675454044}
   - component: {fileID: 1675454043}
   - component: {fileID: 1675454042}
+  - component: {fileID: 1675454045}
   m_Layer: 5
   m_Name: Baixo
   m_TagString: Untagged
@@ -5104,6 +5129,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1675454040}
   m_CullTransparentMesh: 0
+--- !u!114 &1675454045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675454040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24846ae3d7a2ff342924426c9a66a529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1692842354
 GameObject:
   m_ObjectHideFlags: 0
