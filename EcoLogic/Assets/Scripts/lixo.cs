@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class lixo : MonoBehaviour
 {
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -14,8 +15,15 @@ public class lixo : MonoBehaviour
     {
         if (collision.gameObject.tag == "Lata")
         {
+            GameController.qtdeLixos--;
+            Debug.Log(GameController.qtdeLixos);            
             //SceneManager.LoadScene(levelName);
             Destroy(gameObject);
+        }
+
+        if (GameController.qtdeLixos == 0)
+        {
+            Debug.Log("Venceu");
         }
     }
 }
