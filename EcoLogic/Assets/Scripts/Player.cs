@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float speed;
-    public VariableJoystick variableJoystick;
+    public float speed;    
     public Rigidbody2D rb;
 
     // Start is called before the first frame update
