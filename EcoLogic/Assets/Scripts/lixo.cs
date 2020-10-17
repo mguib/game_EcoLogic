@@ -8,6 +8,7 @@ public class lixo : MonoBehaviour
 
     public GameObject victory;
     public GameObject victory_text;
+    public List<GameObject> inimigos;
 
     void Start(){
         victory.SetActive(false);
@@ -30,6 +31,9 @@ public class lixo : MonoBehaviour
             victory.SetActive(true);
             victory_text.SetActive(true);
             PlayerPrefs.SetInt(SceneManager.GetActiveScene().name, 1);
+            for(int i=0;i<4;i++){
+                Destroy(inimigos[i]);
+            }
         }
     }
 }
