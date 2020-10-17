@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Home
   - Restart
+  - Lata
+  - Inimigo
   layers:
   - Default
   - TransparentFX

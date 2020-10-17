@@ -4,18 +4,24 @@ using UnityEngine;
 
 public class MovePersonagem : MonoBehaviour
 {
+    private Rigidbody2D rig;
     public float vel;
-    public static Vector2 direcao;
-    //public Animator anim;
+    public static Vector2 direcao;    
     public string dir;
-
     public Animator animator;
+    public BoxCollider2D boxCollider2D;
+    public int heat;
+    
+
+    private bool colliding;
 
     // Start is called before the first frame update
     void Start()
     {
         //vel = 7f;
         direcao = Vector2.zero;
+        rig = GetComponent<Rigidbody2D>();
+        heat = 3;
 
     }
 
@@ -89,6 +95,20 @@ public class MovePersonagem : MonoBehaviour
             direcao += Vector2.right;
         }
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Inimigo")
+        {
+            heat--;
+            Debug.Log("morrendo " + heat);
+            if (heat == 0)
+            {
+                Destroy(gameObject);
+            }
+
+        }
     }
 
 
