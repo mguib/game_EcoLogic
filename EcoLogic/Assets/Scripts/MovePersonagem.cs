@@ -11,7 +11,6 @@ public class MovePersonagem : MonoBehaviour
     public string dir;
     public Animator animator;
     public BoxCollider2D boxCollider2D;
-<<<<<<< HEAD
     private int heat;
     public GameObject defeat;
     public GameObject defeat_text;
@@ -19,12 +18,8 @@ public class MovePersonagem : MonoBehaviour
     public SpriteRenderer coracoes;
     private int tries;
     public Button next_level;
-    
-=======
-    public int heat;
     public bool invunerable = false;
 
->>>>>>> guib
 
     private SpriteRenderer sprit;
     private bool colliding;
@@ -124,6 +119,8 @@ public class MovePersonagem : MonoBehaviour
             sprit.enabled = true;
             yield return new WaitForSeconds(0.1f);
         }
+        tries++;
+        coracoes.sprite = huds[tries];
         invunerable = false;
     }
     public void DamagePlayer()
@@ -135,6 +132,8 @@ public class MovePersonagem : MonoBehaviour
         {            
             Debug.Log("Morreu");
             Destroy(gameObject);
+            defeat.SetActive(true);
+            defeat_text.SetActive(true);
         }
     }
 
@@ -143,14 +142,11 @@ public class MovePersonagem : MonoBehaviour
         if (other.gameObject.tag == "Inimigo")
         {
             heat--;
-            tries++;
-            coracoes.sprite = huds[tries];
             Debug.Log("morrendo " + heat);
             if (heat == 0)
             {
                 Destroy(gameObject);
-                defeat.SetActive(true);
-                defeat_text.SetActive(true);
+ 
                 next_level.interactable = false;
             }
 

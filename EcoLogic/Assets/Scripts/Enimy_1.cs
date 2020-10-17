@@ -10,6 +10,8 @@ public class Enimy_1 : MonoBehaviour
     private bool dirRigth = true;
     private float timer;
 
+    public Animator animator;
+
 
     // Update is called once per frame
     void Update()
@@ -17,10 +19,12 @@ public class Enimy_1 : MonoBehaviour
         if (dirRigth)
         {
             transform.Translate(Vector2.right * speed * Time.deltaTime);
+            animator.SetBool("Direita",true);
         }
         else
         {
             transform.Translate(Vector2.left * speed * Time.deltaTime);
+            animator.SetBool("Direita",false);
         }
 
         timer += Time.deltaTime;
