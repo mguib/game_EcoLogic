@@ -6102,7 +6102,6 @@ MonoBehaviour:
   dir: 
   animator: {fileID: 1478531555}
   boxCollider2D: {fileID: 0}
-  heat: 0
   defeat: {fileID: 427563661}
   defeat_text: {fileID: 563282313}
   huds:
@@ -6150,7 +6149,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 4335690207f3a79499307707ec4f8ee9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8ec58c28e22af1647b72809d232c57fc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6169,7 +6168,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1478531554}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.01, y: -4.44, z: 0}
+  m_LocalPosition: {x: -10, y: -0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 249841122}
