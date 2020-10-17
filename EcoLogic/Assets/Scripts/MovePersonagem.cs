@@ -134,6 +134,7 @@ public class MovePersonagem : MonoBehaviour
             Destroy(gameObject);
             defeat.SetActive(true);
             defeat_text.SetActive(true);
+            next_level.interactable = false;
         }
     }
 
@@ -146,8 +147,6 @@ public class MovePersonagem : MonoBehaviour
             if (heat == 0)
             {
                 Destroy(gameObject);
- 
-                next_level.interactable = false;
             }
 
         }

@@ -5278,7 +5278,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 59e542b5b2f5af949956c1e7cfbec7d5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c0845eb12f3f570419fba41707a4171b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5315,8 +5315,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7262a68feb195cd4e8c383c5cb1fc344, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
-  moveTime: 2
+  speed: 2
+  moveTime: 4
   animator: {fileID: 996221124}
 --- !u!50 &996221123
 Rigidbody2D:
@@ -5908,8 +5908,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.7000732, y: 1.7000122}
-  m_SizeDelta: {x: 705.4001, y: 350.70004}
+  m_AnchoredPosition: {x: 1.7000732, y: 0.77}
+  m_SizeDelta: {x: 705.4, y: 352.57}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1304766282
 MonoBehaviour:
@@ -6185,8 +6185,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.7, y: 1.7}
-  m_SizeDelta: {x: 705.4, y: 350.7}
+  m_AnchoredPosition: {x: 1.7, y: 0.15}
+  m_SizeDelta: {x: 705.4, y: 353.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1434693049
 MonoBehaviour:
