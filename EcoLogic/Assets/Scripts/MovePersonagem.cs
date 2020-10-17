@@ -11,8 +11,10 @@ public class MovePersonagem : MonoBehaviour
     public Animator animator;
     public BoxCollider2D boxCollider2D;
     public int heat;
-    
+    public bool invunerable = false;
 
+
+    private SpriteRenderer sprit;
     private bool colliding;
 
     // Start is called before the first frame update
@@ -22,7 +24,7 @@ public class MovePersonagem : MonoBehaviour
         direcao = Vector2.zero;
         rig = GetComponent<Rigidbody2D>();
         heat = 3;
-
+        sprit = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -95,6 +97,29 @@ public class MovePersonagem : MonoBehaviour
             direcao += Vector2.right;
         }
 
+    }
+
+    IEnumerator Damage()
+    {
+        for (float i = 0f; i < 1f; i +=0.1f)
+        {
+            sprit.enabled = false;
+            yield return new WaitForSeconds(0.1f);
+            sprit.enabled = true;
+            yield return new WaitForSeconds(0.1f);
+        }
+        invunerable = false;
+    }
+    public void DamagePlayer()
+    {
+        invunerable = true;
+        heat--;
+        StartCoroutine(Damage());
+        if (heat < 1)
+        {            
+            Debug.Log("Morreu");
+            Destroy(gameObject);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D other)
