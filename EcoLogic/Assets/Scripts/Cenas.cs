@@ -9,7 +9,7 @@ public class Cenas : MonoBehaviour
 
     public List<Button> botoes;
 
-    private void Start(){
+    void Start(){
         for (int i = 1; i < botoes.Count; i++){
             if (PlayerPrefs.GetInt("Fase1_" + i.ToString()) == 1){
                 botoes[i].interactable = true;

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MovePersonagem : MonoBehaviour
 {
@@ -10,7 +11,13 @@ public class MovePersonagem : MonoBehaviour
     public string dir;
     public Animator animator;
     public BoxCollider2D boxCollider2D;
-    public int heat;
+    private int heat;
+    public GameObject defeat;
+    public GameObject defeat_text;
+    public List<Sprite> huds;
+    public SpriteRenderer coracoes;
+    private int tries;
+    public Button next_level;
     
 
     private bool colliding;
@@ -18,7 +25,11 @@ public class MovePersonagem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        next_level.interactable = true;
+        tries=0;
         //vel = 7f;
+        defeat.SetActive(false);
+        defeat_text.SetActive(false);
         direcao = Vector2.zero;
         rig = GetComponent<Rigidbody2D>();
         heat = 3;
@@ -102,10 +113,15 @@ public class MovePersonagem : MonoBehaviour
         if (other.gameObject.tag == "Inimigo")
         {
             heat--;
+            tries++;
+            coracoes.sprite = huds[tries];
             Debug.Log("morrendo " + heat);
             if (heat == 0)
             {
                 Destroy(gameObject);
+                defeat.SetActive(true);
+                defeat_text.SetActive(true);
+                next_level.interactable = false;
             }
 
         }

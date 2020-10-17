@@ -1,14 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class lixo : MonoBehaviour
 {
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+
+    public GameObject victory;
+    public GameObject victory_text;
+
+    void Start(){
+        victory.SetActive(false);
+        victory_text.SetActive(false);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -24,6 +27,9 @@ public class lixo : MonoBehaviour
         if (GameController.qtdeLixos == 0)
         {
             Debug.Log("Venceu");
+            victory.SetActive(true);
+            victory_text.SetActive(true);
+            PlayerPrefs.SetInt(SceneManager.GetActiveScene().name, 1);
         }
     }
 }
