@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fase1_4.unity
     guid: f6b09303de25df947a2a7f55f2eea22d
+  - enabled: 1
+    path: Assets/Scenes/EmBreve.unity
+    guid: 4af3ebe395f408a46b02feb63a61d0c1
   m_configObjects: {}

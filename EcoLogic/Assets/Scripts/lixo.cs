@@ -31,7 +31,7 @@ public class lixo : MonoBehaviour
             victory.SetActive(true);
             victory_text.SetActive(true);
             PlayerPrefs.SetInt(SceneManager.GetActiveScene().name, 1);
-            for(int i=0;i<4;i++){
+            for(int i=0;i<inimigos.Count;i++){
                 Destroy(inimigos[i]);
             }
         }
