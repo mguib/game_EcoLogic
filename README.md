@@ -1,2 +1,2 @@
 # game_EcoLogic
-Este jogo esta pertence ao Lab ThinkTEd
+Este jogo pertence ao Lab ThinkTEd
