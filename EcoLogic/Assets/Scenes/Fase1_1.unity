@@ -6266,6 +6266,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5958993924092663510, guid: 173b3fa4d66e88844be95baa63f385f8,
+        type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5958993924092663510, guid: 173b3fa4d66e88844be95baa63f385f8,
+        type: 3}
+      propertyPath: moveTime
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5958993924092663512, guid: 173b3fa4d66e88844be95baa63f385f8,
         type: 3}
       propertyPath: m_Name
@@ -6542,6 +6552,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Inimigo_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6606317759190281994, guid: 10c2b104ce6f6604394d8199183a243c,
+        type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6606317759190281994, guid: 10c2b104ce6f6604394d8199183a243c,
+        type: 3}
+      propertyPath: moveTime
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6606317759190282229, guid: 10c2b104ce6f6604394d8199183a243c,
         type: 3}

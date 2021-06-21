@@ -3382,6 +3382,11 @@ PrefabInstance:
       propertyPath: moveTime
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6722193955133518656, guid: 29f49477b94cf414583f155b546ab1a6,
+        type: 3}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6722193955133518661, guid: 29f49477b94cf414583f155b546ab1a6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3390,7 +3395,7 @@ PrefabInstance:
     - target: {fileID: 6722193955133518661, guid: 29f49477b94cf414583f155b546ab1a6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.59
+      value: -3.09
       objectReference: {fileID: 0}
     - target: {fileID: 6722193955133518661, guid: 29f49477b94cf414583f155b546ab1a6,
         type: 3}
@@ -3451,20 +3456,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 124574111542646604, guid: 27005e5d0f552264481ddb56e90d38ba,
+    - target: {fileID: 124574112205965406, guid: 27005e5d0f552264481ddb56e90d38ba,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
-      value: Fase1_2
+      propertyPath: m_AnchoredPosition.x
+      value: 125.10986
       objectReference: {fileID: 0}
-    - target: {fileID: 124574112300467320, guid: 27005e5d0f552264481ddb56e90d38ba,
+    - target: {fileID: 124574112205965406, guid: 27005e5d0f552264481ddb56e90d38ba,
         type: 3}
-      propertyPath: m_Text
-      value: FASE 1-2
+      propertyPath: m_AnchoredPosition.y
+      value: 74.833984
       objectReference: {fileID: 0}
-    - target: {fileID: 124574112499879426, guid: 27005e5d0f552264481ddb56e90d38ba,
+    - target: {fileID: 124574112490784371, guid: 27005e5d0f552264481ddb56e90d38ba,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Fase1_3
+      propertyPath: m_AnchoredPosition.x
+      value: 170.22021
+      objectReference: {fileID: 0}
+    - target: {fileID: 124574112490784371, guid: 27005e5d0f552264481ddb56e90d38ba,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 120.583984
       objectReference: {fileID: 0}
     - target: {fileID: 124574112531053896, guid: 27005e5d0f552264481ddb56e90d38ba,
         type: 3}
@@ -3571,15 +3581,25 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 124574112531053897, guid: 27005e5d0f552264481ddb56e90d38ba,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 650690733}
     - target: {fileID: 124574112531053900, guid: 27005e5d0f552264481ddb56e90d38ba,
         type: 3}
       propertyPath: m_Name
       value: Canvas (Gameplay)
       objectReference: {fileID: 0}
-    - target: {fileID: 124574113197224032, guid: 27005e5d0f552264481ddb56e90d38ba,
+    - target: {fileID: 124574113173981946, guid: 27005e5d0f552264481ddb56e90d38ba,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Fase1_2
+      propertyPath: m_AnchoredPosition.x
+      value: 81.319824
+      objectReference: {fileID: 0}
+    - target: {fileID: 124574113173981946, guid: 27005e5d0f552264481ddb56e90d38ba,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 120.583984
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27005e5d0f552264481ddb56e90d38ba, type: 3}
